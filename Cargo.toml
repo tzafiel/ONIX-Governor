@@ -1,0 +1,15 @@
+[package]
+name = "onix_governor"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8"
+minifb = "0.24"
+num-complex = "0.4"
+rustfft = "6.0"
+# Simulated LLM capability for the demo (No API key needed for users to test)
+lipsum = "0.9" 
+
+[profile.release]
+opt-level = 3
